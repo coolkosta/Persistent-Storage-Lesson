@@ -10,16 +10,16 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints="name"
         android:hint="Write Here Something"
+        android:inputType="textWebEditText"
         android:minHeight="48dp"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4"
-        android:autofillHints="name"
-        android:inputType="textWebEditText" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/button"
@@ -40,6 +40,28 @@
         app:layout_constraintEnd_toEndOf="@id/button"
         app:layout_constraintStart_toStartOf="@id/button"
         app:layout_constraintTop_toBottomOf="@id/button"
+        tools:text="Sample Text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Result from DataStore"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/tvDataStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView"
         tools:text="Sample Text" />
 
 
